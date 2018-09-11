@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<style type="text/css">
+div{
+	margin: 10px 0 10px 15px;
+
+}
+h1{
+	text-align: center;
+}
+p{
+	font-weight: bold;
+	font-size: 15px;
+}
+body{
+		background: linear-gradient(55deg, #BBDEE8, #110473 ) ;
+}
+#description{
+	margin-left: 50px;
+}
+	form{
+		margin-left: auto;
+    	margin-right: auto;
+		display: block;
+		align-items: center;
+		width: 850px;
+		height: 800px;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	}
+	#submit{
+		margin-left: 55px;
+		border-radius: 8px;
+		padding: 5px 5px 5px 5px;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: monospace;
+		background: #110473;
+		color: #BBDEE8;
+	}
+</style>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+</head>
+<body>
+	<h1 id="title">Survey!</h1>
+	<form id="survey-form" action="submit">
+		<p id="description">This is a survey, please complete it!!</p>
+		<div>
+		<label for="name" id="name-label">Name:</label>
+		<input type="text" name="name" id="name" required="required" placeholder="Your Name">
+		</div>
+		<div>
+		<label for="email" id="email-label">Email:</label>
+		<input type="email" name="email" id="email" required="required" placeholder="user@gmail.com">
+		</div>
+		<div>
+		<label for="number" id="number-label">Phone Number:</label>
+		<input type="number" id="number" name="number" min="1" max="100" required="required" placeholder="+5566712345">
+		</div>
+		<div>
+		<label>Country:</label>
+		<select id="dropdown">
+			<option value="EEUU">EEUU</option>
+			<option value="Mexico">México</option>
+		</select>
+		</div>
+		<div>
+		<label >Sex:</label>
+		<label >Male</label>
+		<input type="radio" name="Sex">
+		<label >Female</label>
+		<input type="radio" name="Sex">
+		</div>
+
+		<fieldset title="Hobbies" >
+			<legend>Hobbies:</legend>
+			<fieldset>
+				<legend>Sports</legend>
+				<label for="sports">Swim</label>
+				<input type="checkbox" value="Swim" name="sports">
+				<label for="sports">Futball</label>
+				<input type="checkbox" value="Futball" name="sports">
+				<label for="sports">Basketball</label>
+				<input type="checkbox" value="Basketball" name="sports">
+			</fieldset>
+			<fieldset>
+				<legend>Art</legend>
+			</fieldset>
+			<label for="Dance">Dance</label>
+			<input type="checkbox" value="Dance" name="Dance">
+			<label for="Run">Run</label>
+			<input type="checkbox" value="Run" name="Run">
+			<label for="Karate">Karate</label>
+			<input type="checkbox" value="Karate" name="Karate">
+			<label for="Garden">Garden</label>
+			<input type="checkbox" value="Garden" name="Garden">
+		</fieldset>
+		<div>
+		<label for="Comments">Comments:</label>
+		<textarea id="Comments" ></textarea>
+		</div>
+		<input type="button" name="submit" id="submit" value="Submit">
+
+	</form>
+</body>
+</html>
