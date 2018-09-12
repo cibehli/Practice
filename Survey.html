@@ -12,7 +12,7 @@ p{
 	font-size: 15px;
 }
 body{
-		background: linear-gradient(55deg, #BBDEE8, #110473 ) ;
+		background: linear-gradient(55deg, #FCF6F4, #DBCECB ) ;
 }
 #description{
 	margin-left: 50px;
@@ -33,8 +33,19 @@ body{
 		font-size: 20px;
 		font-weight: bold;
 		font-family: monospace;
-		background: #110473;
-		color: #BBDEE8;
+		background: #DBCECB;
+		color: #FCF6F4;
+	}
+	legend{
+		font-weight: bold;
+		font-size: 18px;
+	}
+	fieldset{
+		margin-right: 300px;
+	}
+	textarea{
+		width: 200px;
+		height: 100px;
 	}
 </style>
 <html>
@@ -66,12 +77,26 @@ body{
 		</select>
 		</div>
 		<div>
-		<label >Sex:</label>
-		<label >Male</label>
-		<input type="radio" name="Sex">
-		<label >Female</label>
-		<input type="radio" name="Sex">
+			<fieldset >
+			<legend>Favorite fruit and vegetable</legend>
+			Fruit:
+			<label for="mango" >Mango</label>
+			<input id="mango" type="radio" name="frut" value="mango">
+			<label for="banana">Banana</label>
+			<input id="banana" type="radio" name="frut" value="banana">
+			<label for="grape" >Grape</label>
+			<input id="grape" type="radio" name="frut" value="grape">
+			<br>
+			Vegetable:
+			<label for="carrot" >Carrot</label>
+			<input id="carrot" type="radio" name="vegetable" value="carrot">
+			<label for="cucumber">Cucumber</label>
+			<input id="cucumber" type="radio" name="vegetable" value="cucumber">
+			<label for="potato" >Potato</label>
+			<input id="potato" type="radio" name="vegetable" value="potato">
+			</fieldset>
 		</div>
+
 
 		<fieldset title="Hobbies" >
 			<legend>Hobbies:</legend>
@@ -86,21 +111,21 @@ body{
 			</fieldset>
 			<fieldset>
 				<legend>Art</legend>
+				<label for="Dance">Dance</label>
+			<input type="checkbox" value="Dance" name="Art">
+			<label for="Paint">Paint</label>
+			<input type="checkbox" value="Paint" name="Art">
+			<label for="Music">Music</label>
+			<input type="checkbox" value="Music" name="Art">
 			</fieldset>
-			<label for="Dance">Dance</label>
-			<input type="checkbox" value="Dance" name="Dance">
-			<label for="Run">Run</label>
-			<input type="checkbox" value="Run" name="Run">
-			<label for="Karate">Karate</label>
-			<input type="checkbox" value="Karate" name="Karate">
-			<label for="Garden">Garden</label>
-			<input type="checkbox" value="Garden" name="Garden">
+			
+			
 		</fieldset>
 		<div>
-		<label for="Comments">Comments:</label>
+		<label for="Comments" >Comments:</label>
 		<textarea id="Comments" ></textarea>
 		</div>
-		<input type="button" name="submit" id="submit" value="Submit">
+		<input type="submit" name="submit" id="submit" value="submit"  >
 
 	</form>
 </body>
