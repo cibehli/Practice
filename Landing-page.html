@@ -2,54 +2,199 @@
 <html>
 <head>
 	<style type="text/css">
-	body{
-		background: linear-gradient(90deg, #FFFFFF, #F2F2F2 ) ;
-	}
 		
 		nav{
 			display: flex;
+			grid-area: header;
+			background: #8AADC3;
+			align-items: center;
+			align-self: center;
+			height: 50px;
+			padding-top: 15px;
+			margin-bottom: 50px;
+			color: #ECF3F7;
+			padding-bottom: 15px;
+		}
+		body{
+			background: linear-gradient(35deg, #FDFDFD, #B9D8F0);
 		}
 		.nav-link{
 			font-size: 35px;
 			font-weight: bold;
-			font-family: fantasy;
-			color: gray;
+			font-family: serif,"Brush Script MT", "Brush Script Std";
+			font-style: oblique;
+			color: #ECF3F7;
 			margin-right: 30px;
+			margin-left: 30px;
+			text-decoration: none;
+
 		}
 		.nav-link:hover{
-			color: gray;
+			color: #ECF3F7;
 		}
-		#img-logo{
-			opacity: 0.6;
+		#header-image{
+			opacity: 0.9;
+			display: inline-flex;
+			border-radius: 50%;
+			margin-left: 50px;
 		}
+		#contact-image{
+			margin-top: 50px;
+			display: block;
+			align-items: center;
+			padding: 10px;
+			
+		}
+		.images-contact{
+			width: 100px; 
+			height: 100px;
+			padding: 15px;
+			
+		}
+		.container {
+		    font-size: 1.5em;
+		    min-height: 300px;
+		    width: 100%;
+		    display: grid;
+		    grid-template-columns: auto;
+		    grid-template-rows: auto 1fr auto;
+		    grid-template-areas:
+		      "header"
+		      "content"
+		      "footer";
+		  }
+		  #content
+		  {
+		  	grid-area: content;
+		  	text-align: center;
+		  }
+		  #footer{
+		  	background: #8AADC3;
+		  	padding-top: 15px;
+		  	padding-bottom: 15px;
+		  	text-align: center;
+		  	grid-area: footer;
+
+		  }
+		  #submit{
+		  	border-radius: 10px;
+		  	color: #15577C;
+		  	background: #B9D8F0;
+		  	border-color:#8AADC3;
+		  	padding: 5px;
+		  	font-weight: bold;
+		  	font-size: 15px;
+
+		  }
+		  #email{
+		  	border-radius: 5px;
+		  	padding: 3px;
+		  }
+		  #about{
+		  display: flex;
+		 text-align: center;
+		 align-items: center;
+		 justify-content: center;
+		  }
+		 
+		   @media screen and (max-width: 400px){
+		   	
+		   	#about{
+		   		font-size: 10px;
+		   	}
+		   	h1{
+		   		font-size: 30px;
+		   	}
+		   	h2{
+		   		font-size: 25px;
+		   	}
+		   	h3{
+		   		font-size: 20px;
+		   	}
+		   	footer{
+		   		font-size: 15px;
+		   	}
+		   }
+		   #header{
+		   	position: fixed; 
+			top: 0; 
+			width:100%; 
+		   }
 	</style>
 	<title></title>
 </head>
 <body>
+	<div class="container">
+		
+	
 <header id="header">
-	<nav id="nav-bar"><img id="img-logo" src="C:\Users\brenda.zatarainc\Documents\Proyectos\Projects\logo.jpg">
+	<nav id="nav-bar"><img id="header-image" src="C:\Users\brenda.zatarainc\Documents\Proyectos\Projects\logo.jpg">
 		<div style="align-items: right; text-align: center;">
 			<a class="nav-link" href="#home">Home</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a>	
+
 		</div>
 		</nav>
 </header>
-<form>
+<div id="content">
+<form id="form" action="https://www.freecodecamp.com/email-submit" >
 	<div id="home">
-		<h1>HOME</h1>	
-		<video></video>
+		<h1>HOME</h1>
+		
+				<h3>Design of Webpage</h3>
+			<video id="video" controls>
+				<source src="https://www.youtube.com/watch?v=8LQSe_1D27I" type="video">
+			</video>	
+			
+			
+		
+		
+
+		<h2>Register your Email here!!!</h2>
+		<input type="email" name="email" id="email"required="required" pattern="email@live.com" placeholder="email@xmail.com"  >
+		<input type="submit" name="" value="Submit" id="submit">
+	</div>
+	
+<h1>ABOUT</h1>
+<div id="about" >
+	
+	<div id="about-image">
+		<img src="design.jpg" style="opacity: .2;">
+	</div>
+	<div>
+		<p style="text-align: justify; padding-left: 10px;">
+		Hi everybody!!
+		<br>
+		I love to work making new things!! It's great to see how things comes to live.
+		Lerning new technologies. 
+	</p>
+	<p  style="text-align: justify; padding-left: 10px;">
+		Enjoy making web systems and how people use it.
+	</p>
 	</div>
 	
 	
-
-<div id="about">
-	<h1>ABOUT</h1>
+	
 </div>
 	
 <div id="contact">
-	<h1>CONTACT</h1>
+		<h1>CONTACT</h1>
+	<div id="contact-image">
+		<img src="gmail.png" alt="email" class="images-contact" >
+		<img src="faceebook.png" alt="faceebook" class="images-contact">
+		<img src="instagram.jpg" alt="instagram" class="images-contact">	
+	</div>
+	
 </div>
 	
 </form>
-<footer></footer>
+</div>
+<div id="footer">
+<footer>
+	
+		Copyright © 2018 	
+	
+</footer>
+</div>
+</div>
 </body>
 </html>
