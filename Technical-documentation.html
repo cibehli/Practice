@@ -2,39 +2,57 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	<title>Technical Documentation User Stories</title>
 </head>
 <body>
 <main id="main-doc" class="main-doc">
 	<div class="navigate">
-		<nav>
+		<nav id="navbar">
+			<header>Nav User Story</header>
 		<section class="nav">
-			<header >
-				<a class="nav-section" href="#user-story">User Story</a> 
-			</header>
+			
+				<a  href="#User_Story" class="nav-link">User Story</a> 
+			
 		</section>
 		<section class="nav">
-			<header >
-				<a href="#history" class="nav-section">History</a> 
-			</header>
+			
+				<a href="#History" class="nav-link">History</a> 
+			
 		</section>
 		<section class="nav">
-			<header >
-				<a class="nav-section" href="#common">Common templates</a>
-			</header>
+			
+				<a class="nav-link" href="#Common_templates">Common templates</a>
+			
 		</section>
 		<section class="nav">
-			<header >
-				<a class="nav-section" href="#examples">Examples</a>
-			</header>
+			
+				<a class="nav-link" href="#Examples">Examples</a>
+			
 		</section>
+			<section class="nav">
+			
+				<a class="nav-link" href="#Usage">Usage</a>
+			
+		</section>
+		<section class="nav">
+			
+				<a class="nav-link" href="#Benefits">Benefits</a>
+			
+		</section>
+		<section class="nav">
+			
+				<a class="nav-link" href="#Limitations">Limitations</a>
+			
+		</section>
+		
 	</nav>
 	</div>
 	
-	<div id="sections" class="main-section" >
+	<div id="sections" class="section"  >
 		
 
-		<section id="user-story" >
+		<section id="User_Story"class="main-section" >
 			<header >
 				User Story
 			</header>
@@ -48,7 +66,7 @@
 				User stories are often confused with system requirements. A requirement is a formal description of need; a user story is an informal description of a feature.
 			</p>
 		</section>
-		<section id="history">
+		<section id="History" class="main-section">
 			<header>
 				History
 			</header>
@@ -75,27 +93,111 @@
 
 			</p>
 		</section>
-		<section>
-			<header id="common">
+		<section class="main-section" id="Common_templates" >
+			<header >
 				Common templates
 			</header>
 			<p>
 				User stories may follow one of several formats or templates. The most common would be the Connextra template:[5][6]
+			</p>
+			<p>
+				<li>As a <role> I can <capability>, so that <receive benefit>
+					</li>
+				Chris Matts suggested that "hunting the value" was the first step in successfully 					delivering software, and proposed this alternative:[7]
+				
+			</p>
+			<li>
+				In order to <receive benefit> as a <role>, I can <goal/desire>
+				</li>	
+				<p>
+			Elias Weldemichael, on the other hand, suggested the "so that" clause is perhaps optional although still often helpful:[8]
+						</p>
 
-As a <role> I can <capability>, so that <receive benefit>
-Chris Matts suggested that "hunting the value" was the first step in successfully delivering software, and proposed this alternative:[7]
+			<p>
+				<li>
+				As a <role>, I can <goal/desire>, so that <why>
+					</li>
+			Another template based on the Five Ws specifies:[citation needed]
+			
+			</p>
+			<p>
+				<li>
+				As <who> <when> <where>, I <want> because <why>
+					</li>
+			Another template based on Rachel Davies' popular template:[9]
+			</p>
 
-In order to <receive benefit> as a <role>, I can <goal/desire>
-Elias Weldemichael, on the other hand, suggested the "so that" clause is perhaps optional although still often helpful:[8]
+			<p>
+				<li>
+				As <persona>, I can <what?> so that <why?>
+				</li>
+			where a persona is a fictional stakeholder (e.g. user). A persona may include a name, picture; characteristics, behaviors, attitudes, and a goal which the product should help them achieve.
+			</p>
+		</section>
+		<section class="main-section" id="Examples">
+			<header>Examples</header>
+			<code>Screening Quiz (Epic Story)</code>
 
-As a <role>, I can <goal/desire>, so that <why>
-Another template based on the Five Ws specifies:[citation needed]
+			<p>
+				As the HR manager, I want to create a screening quiz so that I can understand whether I want to send possible recruits to the functional manager.[10]
+			</p>
+			<code>Quiz Recall</code>
+			<p>
+				As a manager, I want to browse my existing quizzes so I can recall what I have in place and figure out if I can just reuse or update an existing quiz for the position I need now.[10]
+			</p>
 
-As <who> <when> <where>, I <want> because <why>
-Another template based on Rachel Davies' popular template:[9]
+			<code>Limited Backup</code>
+			<p>
+				As a user, I can indicate folders not to backup so that my backup drive isn't filled up with things I don't need saved.[11]
+			</p>
 
-As <persona>, I can <what?> so that <why?>
-where a persona is a fictional stakeholder (e.g. user). A persona may include a name, picture; characteristics, behaviors, attitudes, and a goal which the product should help them achieve.
+		</section>
+		<section class="main-section" id="Usage">
+			<header >
+				Usage
+			</header>
+			<p>
+				As a central part of many agile development methodologies, such as in XP's planning game, user stories define what has to be built in the software project. User stories are prioritized by the customer (or the product owner in Scrum) to indicate which are most important for the system and will be broken down into tasks and estimated by the developers. One way of estimating is via a Fibonacci scale.
+			</p>
+			<p>
+				When user stories are about to be implemented, the developers should have the possibility to talk to the customer about it. The short stories may be difficult to interpret, may require some background knowledge or the requirements may have changed since the story was written.
+			</p>
+			<p>
+				Every user story must at some point have one or more acceptance tests attached, allowing the developer to test when the user story is done and also allowing the customer to validate it. Without a precise formulation of the requirements, prolonged nonconstructive arguments may arise when the product is to be delivered.
+			</p>
+		</section>
+		<section class="main-section" id="Benefits">
+			<header >
+				Benefits
+			</header>
+			<p>
+				There is no good evidence that using user stories increases software success or developer productivity. However, user stories facilitate sensemaking without undue problem structuring, which is linked to success.[12]
+			</p>
+		</section>
+		<section class="main-section" id="Limitations">
+			<header >
+				Limitations
+			</header>
+			<p>
+				Limitations of user stories include:
+			</p>
+			<code>
+				Scale-up problem
+			</code>
+			<p>
+				User stories written on small physical cards are hard to maintain, difficult to scale to large projects and troublesome for geographically distributed teams.
+			</p>
+			<code>
+				Vague, informal and incomplete
+			</code>
+			<p>
+				User story cards are regarded as conversation starters. Being informal, they are open to many interpretations. Being brief, they do not state all of the details necessary to implement a feature. Stories are therefore inappropriate for reaching formal agreements or writing legal contracts.[13]
+			</p>
+			<code>
+				Lack of non-functional requirements
+			</code>
+			<p>
+				User stories rarely include performance or non-functional requirement details, so non-functional tests (e.g. response time) may be overlooked.
 			</p>
 		</section>
 	</div>
