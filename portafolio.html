@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<link rel="stylesheet" type="text/css" href="style-portafolio.css">
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	<title>Personal Portafolio</title>
@@ -9,49 +10,71 @@
 	<div class="container">
 		
 <header id="header">
-	<nav id="nav-bar"><img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_eApY5G9tmQ_TuAQjOTsRE_OhQe6MUngzkF6X30gVIoyjK3pk">
+	<nav id="navbar">
 		<div >
-			<a class="nav-link" href="#home">Home</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a>	
+			<a class="nav-link" href="#home">About</a>
+			<a class="nav-link" href="#projects">Projects</a>
+			<a class="nav-link" href="#contact">Contact</a>	
 
 		</div>
 		</nav>
 
 </header>
-<div id="content">
-<form id="form" action="https://www.freecodecamp.com/email-submit" >
+<div id="welcome-section">
+	<h1>Welcome to my Profile</h1>
+
+
+
 	<div id="home">
 		<h1>About</h1>
-		
+		<div id="about-image">
+		<img src="design.jpg" style="opacity: .2;">
+	</div>
 				<h3>Hi My name is Brenda,</h3>
 				<p style="color: #492963;">a web programmer.</p>
 	</div>
-	
-<h1>Work</h1>
-<div id="work" >
-	
-	<div id="about-image">
-		<img src="design.jpg" style="opacity: .2;">
-	</div>
-	<div>
-		<p style="text-align: justify; padding-left: 10px;">
-		Hi everybody!!
-		<br>
-		I love to work making new things!! It's great to see how things comes to live.
-		Lerning new technologies. 
-	</p>
-	<p  style="text-align: justify; padding-left: 10px;">
-		Enjoy making web systems and how people use it.
-	</p>
-	</div>
-	
-	
-	
 </div>
+<div id="grid-section">	
+<h1>Projects</h1>
+<section id="projects" class="grid">
+	<div class="project-tile">
+		Tribute
+		<br>
+		<a href="Tribute.html" target="_blank" >
+			<img  src="Tribute-page.png" alt="Tribute" class="images-project">
+		</a>
+	</div>
+	<div class="project-tile">
+		Survey
+		<br>
+		<a href="Survey.html" target="_blank" >
+			<img  src="Survey-page.png" alt="Survey" class="images-project">
+		</a>
+	</div>
+	<div class="project-tile">
+		Landin Page
+		<br>
+		<a href="Landin-page.html" target="_blank" >
+			<img  src="Landin-page-image.png" alt="Landin-page" class="images-project">
+		</a>
+	</div>
+	<div class="project-tile">
+		Technical Documentation
+		<br>
+		<a href="Technical-documentation.html" target="blank_" >
+			<img  src="Technical-documentation-page.png" alt="Technical-documentation" class="images-project">
+		</a>
+	</div>
+	
+</section>
 	
 <div id="contact">
 		<h1>Contact</h1>
 		<p>Let's work together...</p>
 	<div id="contact-image">
+		<a id="profile-link" href="Landin-page.html" target="_blank" >
+			<img  src="https://www.google.com.mx/search?q=github+logo&tbm=isch&source=iu&ictx=1&fir=aTusv9C-xWTRXM%253A%252CHPDOGgjIp7J8kM%252C_&usg=AI4_-kQmTQVLAMofcPifR8Ht-aQ5rvHmVQ&sa=X&ved=2ahUKEwisrOf5oPrdAhVM7YMKHfnLCtcQ9QEwCnoECAUQGA#imgrc=aTusv9C-xWTRXM:" alt="Landin-page" class="images-project">
+		</a>
 		<img src="gmail.png" alt="email" class="images-contact" >
 		<img src="faceebook.png" alt="faceebook" class="images-contact">
 		<img src="instagram.jpg" alt="instagram" class="images-contact">	
@@ -59,7 +82,7 @@
 	
 </div>
 	
-</form>
+
 </div>
 <div id="footer">
 <footer>
